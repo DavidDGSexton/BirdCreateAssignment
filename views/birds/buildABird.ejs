@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <%- include('../partials/header', {title: 'Create a Bird'}); %>
+  <body>
+    <% include ../partials/navbar %>
+    <div style="padding-left: 40px;">
+    <h1><%= title %></h1>
+    <p>Enter information for a new bird</p>
+    <form method="POST" action="/birds/create" enctype="text/html">
+        <div class="form-group col-4">
+          <label for="birdNickname">Nickname</label>
+          <input type="text" class="form-control" id="birdNickname" name="nickname" placeholder="Enter Nickname">
+        </div>
+        <div class="form-group col-4">
+          <label for="birdSpecies">Species</label>
+          <input type="text" class="form-control" id="birdSpecies" name="species" placeholder="Enter Species">
+        </div>
+        <div class="form-group col-4">
+          <label for="birdStatus">Status</label>
+          <input type="text" class="form-control" id="birdStatus" name="status" placeholder="Enter Status">
+        </div>
+        <button type="submit" value="Create" class="btn btn-primary" style="margin-top: 10px;">Submit</button>
+      </form>
+      </div>
+      <% include ../partials/scripts %>
+  </body>
+</html>

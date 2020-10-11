@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<%- include('../partials/header', {title: 'Birds'}); %>
+
+<body>
+    <% include ../partials/navbar %>
+    <div style="padding-left: 40px;">
+        <h1><%= title %></h1>
+        <p>Your bird, <%= birdNickname %>, was successfully added!</p>
+    </div>
+    <% include ../partials/scripts %>
+</body>
+
+</html>
